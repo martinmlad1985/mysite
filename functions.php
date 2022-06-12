@@ -73,7 +73,8 @@ function mytheme_script_and_style() {
 	wp_register_script( 'jquery', 'https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js');
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'bootstrap_js', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js', array(), '', true );
-
+	wp_enqueue_script( 'main_js', get_template_directory_uri() . '/assets/js/main.js', array(), '', true);
+	
 }
 
 

@@ -3,6 +3,8 @@
 
 <main>
     <div class="container py-5 text-white">
+        Код сайта можно посмотреть на <a href="https://github.com/martinmlad1985/mysite">GitHub</a>
+        <br>
         Это список того, что я использовал:    
         <ul>
             <li>Использован custom-logo</li>
