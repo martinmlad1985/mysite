@@ -7,7 +7,7 @@
     min-height: 100vh;
     box-sizing: border-box;
     position: relative;
-    background: $bg-wrapper no-repeat;
+    background: $bg-wrapper-full;
 }
 
 header {
@@ -32,6 +32,7 @@ footer {
     color: $color-header-menu;
     position: absolute;
     bottom: 0;
+    margin-top: 2rem;
 }
 
 .house {
@@ -52,10 +53,9 @@ footer {
 
 
 .main {
-    border-radius: 1rem;
     text-align: center;
     text-shadow: 0px 0px 3px rgb(251, 60, 92);
-    padding: 1rem;
+    padding: 2rem;
     color: white;
     font-family: 'Cormorant Infant', serif;
     font-size: 2rem;
@@ -68,12 +68,58 @@ footer {
     }
 }
 
+main {
+    .menu {
+        list-style-type: none;
+        width: 80vw;
+        height: 80vh;
+        background: rgb(232, 232, 229);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 50px;
+        font-weight: bold;
+        border-radius: 15px;
+        
+
+
+        li {
+            a {
+                color: rgb(33, 32, 34);
+                display: block;
+                text-align: center;
+                text-shadow: 2px 2px 5px;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 576px) {
+    .main {
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .wrapper {
+       background: $bg-wrapper;
+    }
+}
+
+
+
+
 .hide {
     display: none;
 }
 
 .visible {
-    display: block!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; 
 }    
 
 
