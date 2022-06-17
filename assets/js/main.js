@@ -1,10 +1,24 @@
 
 console.log('hello');
 
-let popup_menu= document.querySelector('#popup_menu');
+
+// popup-menu for mobile device
+let menu= document.querySelector('.menu');
 let menu_icon= document.querySelector('.menu-icon');
 
 menu_icon.addEventListener('click', function() {
 	menu_icon.classList.toggle('hide');
-    popup_menu.classList.toggle('visible');
+    menu.classList.toggle('vis');
 });
+
+
+// height auto-correct
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+window.addEventListener('resize', () => {
+    // получаем текущее значение высоты
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  });
+  
