@@ -1,6 +1,3 @@
 
-<?php
+<img src="<?php the_field('home-img');?>" alt="">
 
-the_post_thumbnail(array(), array('class' => 'blablabla'));
-
-?>

@@ -12,6 +12,8 @@ menu_icon.addEventListener('click', function() {
 });
 
 
+
+
 // height auto-correct
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -21,4 +23,10 @@ window.addEventListener('resize', () => {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
   });
+
+
+
+  let header= document.querySelector('header');
+  let hh = getComputedStyle(header).height;
+  document.documentElement.style.setProperty('--hh', `${hh}`);
   
