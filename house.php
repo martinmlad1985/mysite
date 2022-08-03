@@ -12,12 +12,10 @@ Template Name: Шаблон страницы "Про дом"
 
     <div class="container">
         <?php 
-            // параметры по умолчанию
             $my_posts = get_posts( array(
-                // 'numberposts' => 5,
                 'orderby'     => 'date',
                 'category_name' => 'about_home',
-                'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                'suppress_filters' => true, 
                 'nopaging' => true
             ) );
 

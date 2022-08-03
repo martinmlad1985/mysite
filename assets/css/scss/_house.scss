@@ -2,7 +2,14 @@
 .house {
     height: calc((var(--vh, 1vh) * 100 - var(--hh))/2);
     padding-top: 1rem;
-    text-shadow: 0px 0px 3px rgb(251, 60, 92);
+    // text-shadow: 0px 0px 3px rgb(251, 60, 92);
+    a {
+        text-decoration: none;
+        
+    }
+    :hover {
+        color: white;
+    }
 }
 
 .house__img {
@@ -69,7 +76,7 @@
     }
 }
 
-@media (orientation: landscape) and (min-height: 320px) {
+@media (orientation: landscape) {
     .house__img {
         width: 200px;
         height: 140px;

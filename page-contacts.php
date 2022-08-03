@@ -3,9 +3,7 @@
 
 <main>
     <div class="container py-5">    
-        Contacts
-        <?php  echo do_shortcode( '[contact-form-7 id="60" title="форма"]' );?>
-       
+    <?php echo do_shortcode( '[contact-form-7 id="196" title="Форма2"]' );?> 
     </div>
 </main>
 

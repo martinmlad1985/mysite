@@ -7,27 +7,32 @@
 <main>
 
     <div class="container">
-        family
+        
 
         <?php 
-            // параметры по умолчанию
             $my_posts = get_posts( array(
-                'numberposts' => 5,
+                'orderby'     => 'date',
+                // 'category_name' => 'family',
+                'suppress_filters' => true, 
+                'nopaging' => true,
                 'post_type'   => 'family',
-                'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
             ) );
 
             foreach( $my_posts as $post ){
                 setup_postdata( $post );
                 ?>  
-                    <div>  <?php
-                         the_title();
-                         the_content(); 
-                         the_field('photo_name');
-                         the_field('description');
-                            ?>
-                    <img src="<?php the_field('photo'); ?>" alt="csfsf" />
-                    <hr>
+                    <div class= "house"> 
+                        <a class="house__permalink" href="<?php the_permalink()?>">
+                            <div class="house__title">
+                                <?php the_field('photo_name') ?>
+                            </div>
+                            <div class="house__contentwrap">
+                                <div class="house__content">
+                                    <?php the_field('description') ?>
+                                </div>
+                                <div class="house__img" style="background-image: url(<?php the_field('photo')?>); background-size: cover; background-repeat: no-repeat;"></div>
+                            </div>
+                             </a>    
                     </div>
                 <?php
                  
