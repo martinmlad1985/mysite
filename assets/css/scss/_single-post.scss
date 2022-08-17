@@ -1,0 +1,138 @@
+
+
+.single-post {
+    height: calc((var(--vh, 1vh) * 100 - var(--hh)));
+    padding-top: 1rem;
+    color: white;
+}
+
+.single-post__img {
+    width: 300px;
+    height: 200px;
+    border-radius: 7px;
+    margin-top: 0.5rem;
+}
+
+.single-post__taxonomy {
+    margin-top: 1rem;
+    a {
+        color: rgb(31, 16, 77);
+        font-weight: bold;
+    }
+}
+
+.single-post__title {
+    text-align: center;
+}
+
+.single-post__content {
+    // display: none;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+.single-post__contentwrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (orientation: portrait) and (min-width: 480px) {
+    .single-post__img {
+        width: 400px;
+        height: 260px;
+    }
+    .single-post__title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 576px) {
+    .single-post__img {
+        width: 500px;
+        height: 320px;
+    }
+    .single-post__content {
+        font-size: 1.5rem;
+    }
+    .single-post__title {
+        font-size: 2.0rem;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+
+}
+
+@media (orientation: portrait) and (min-width: 992px) {
+    .single-post__img {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+
+@media (orientation: landscape) {
+    .single-post__img {
+        width: 200px;
+        height: 140px;
+    }
+    .single-post__content {
+        display: block;
+        width: 50%;
+        padding: 1rem;
+    }
+    .single-post {
+        height: calc((var(--vh, 1vh) * 100 - var(--hh)));
+    }
+    .single-post__contentwrap {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+
+
+@media (orientation: landscape) and (min-height: 480px) {
+    .single-post__img {
+        width: 300px;
+        height: 200px;
+    }
+}
+
+
+@media (orientation: landscape) and (min-height: 576px) {
+    .single-post__img {
+        width: 400px;
+        height: 250px;
+    }
+}
+
+
+
+@media (orientation: landscape) and (min-width: 1200px) {
+    .single-post__img {
+        width: 600px;
+        height: 400px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
