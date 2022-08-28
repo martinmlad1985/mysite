@@ -11,9 +11,9 @@
        ?>         
                 
                     <div class= "single-post"> 
-                        <div class="single-post__title">
+                        <!-- <div class="single-post__title">
                             <?php the_field('photo_name'); ?>
-                        </div>
+                        </div> -->
                         <div class="single-post__contentwrap">
                             <div class="single-post__content">
                                 <?php the_field('description');?>

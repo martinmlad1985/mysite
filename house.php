@@ -29,11 +29,11 @@ Template Name: Шаблон страницы "Про дом"
                             </div>
                             <div class="house__contentwrap">
                                 <div class="house__content">
-                                    <?php the_content() ?>
+                                    <?php the_content('More...') ?>
                                 </div>
                                 <div class="house__img" style="background-image: url(<?php the_field('home-img')?>); background-size: cover; background-repeat: no-repeat;"></div>
                             </div>
-                             </a>    
+                        </a>    
                     </div>
                 <?php
                  
