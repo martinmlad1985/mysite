@@ -99,6 +99,7 @@
     .house {
        min-height: calc((var(--vh, 1vh) * 100 - var(--hh))/2);
     }
+    
 }
 
 @media (orientation: landscape) and (min-height: 480px) {
